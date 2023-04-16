@@ -20,8 +20,10 @@ st.markdown("<h5 style='text-align: justify; color: blue;'>Membuat Peta dengan P
 st.image("ugi.png", caption='', width = 350)
 
 file1 =  'jam_gadang.jpg'
-dir_base1 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
-Filename1 = dir_base1 + "/" + file1
+#dir_base1 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
+#Filename1 = dir_base1 + "/" + file1
+
+Filename1 = file1
 
 encoded1 = pybase64.b64encode(open(Filename1, 'rb').read())
 
@@ -32,8 +34,9 @@ svg1 = """<center>
 
 
 file2 =  'masjid.jpg'
-dir_base2 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
-Filename2 = dir_base2 + "/" + file2
+#dir_base2 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
+#Filename2 = dir_base2 + "/" + file2
+Filename2 = file2
 
 encoded2 = pybase64.b64encode(open(Filename2, 'rb').read())
 
