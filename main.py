@@ -1,10 +1,11 @@
-import streamlit as st 
+import streamlit as st
+import folium as folium 
 import pandas as pd
 from streamlit_folium import st_folium
 import pandas
 import os
 from folium import IFrame
-import base64
+import base64 as base64
 
 st.set_page_config(layout="wide")
 
@@ -16,7 +17,7 @@ st.markdown("<h5 style='text-align: justify; color: blue;'>Membuat Peta dengan P
 
 st.image("ugi.png", caption='', width = 350)
 
-file1 =  'jam_gadang.JPG'
+file1 =  'jam_gadang.jpg'
 dir_base1 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
 Filename1 = dir_base1 + "/" + file1
 
@@ -28,7 +29,7 @@ svg1 = """<center>
 
 
 
-file2 =  'masjid.JPG'
+file2 =  'masjid.jpg'
 dir_base2 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
 Filename2 = dir_base2 + "/" + file2
 
