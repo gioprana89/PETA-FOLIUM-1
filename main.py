@@ -16,7 +16,7 @@ st.markdown("<h5 style='text-align: justify; color: blue;'>Membuat Peta dengan P
 
 st.image("ugi.png", caption='', width = 350)
 
-file1 =  'jam_gadang.jpg'
+file1 =  'jam_gadang.JPG'
 dir_base1 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
 Filename1 = dir_base1 + "/" + file1
 
@@ -28,7 +28,7 @@ svg1 = """<center>
 
 
 
-file2 =  'masjid.jpg'
+file2 =  'masjid.JPG'
 dir_base2 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
 Filename2 = dir_base2 + "/" + file2
 
