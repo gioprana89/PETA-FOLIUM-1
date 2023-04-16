@@ -1,17 +1,9 @@
 import streamlit as st 
-
-import folium
 import pandas as pd
- 
 from streamlit_folium import st_folium
-
-
-
 import pandas
 import os
-
 from folium import IFrame
-
 import base64
 
 st.set_page_config(layout="wide")
@@ -61,10 +53,6 @@ iframe2 = IFrame(svg2(encoded2.decode('UTF-8'), width, height) , width=width, he
 popup2  = folium.Popup(iframe2, parse_html = True, max_width=150)
 
 
-
-
-import folium
-import pandas as pd
  
 m = folium.Map(location = [-0.789275, 113.921327],
                zoom_start = 5,
