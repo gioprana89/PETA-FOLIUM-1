@@ -5,7 +5,9 @@ from streamlit_folium import st_folium
 import pandas
 import os
 from folium import IFrame
-import base64 as base64
+#import base64 as base64
+
+import pybase64
 
 st.set_page_config(layout="wide")
 
@@ -21,7 +23,7 @@ file1 =  'jam_gadang.jpg'
 dir_base1 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
 Filename1 = dir_base1 + "/" + file1
 
-encoded1 = base64.b64encode(open(Filename1, 'rb').read())
+encoded1 = pybase64.b64encode(open(Filename1, 'rb').read())
 
 svg1 = """<center>
   <object data="data:image/jpg;base64,{}" width="{}" height="{} type="image/svg+xml">
@@ -33,7 +35,7 @@ file2 =  'masjid.jpg'
 dir_base2 = 'D:/PYTHON/STREAMLIT/PETA/FOLIUM'
 Filename2 = dir_base2 + "/" + file2
 
-encoded2 = base64.b64encode(open(Filename2, 'rb').read())
+encoded2 = pybase64.b64encode(open(Filename2, 'rb').read())
 
 svg2 = """<center>
   <object data="data:image/jpg;base64,{}" width="{}" height="{} type="image/svg+xml">

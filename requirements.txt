@@ -10,3 +10,4 @@ geopandas==0.12.2
 multiapp==1.0
 streamlit_folium==0.11.1
 folium==0.14.0
+pybase64==1.2.3
